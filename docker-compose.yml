@@ -1,0 +1,10 @@
+version: '3.1'
+services:
+  postgres-for-it-tests-sample:
+    image: postgres:9.6
+    ports:
+    - 15432:5432
+    environment:
+      POSTGRES_PASSWORD: foosecret
+      POSTGRES_USER: foouser
+      POSTGRES_DB: foodb
